@@ -74,7 +74,7 @@ const CreateProject = () => {
               <img
                 src={
                   imageURL ||
-                  'https://media.wired.com/photos/5926e64caf95806129f50fde/master/pass/AnkiHP.jpg'
+                  'https://media.licdn.com/dms/image/D560BAQHyxHGIB-gT_A/company-logo_200_200/0/1712742598423?e=1723680000&v=beta&t=Kq7wj013SZC3atzEyBxOIvJ9DNoI2d0fAXxWp2_RiLM'
                 }
                 alt="project title"
                 className="h-full w-full object-cover cursor-pointer"

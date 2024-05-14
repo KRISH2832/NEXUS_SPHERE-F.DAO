@@ -1,0 +1,32 @@
+[debug] [2024-05-14T13:30:50.262Z] ----------------------------------------------------------------------
+[debug] [2024-05-14T13:30:50.265Z] Command:       /home/neo/.nvm/versions/node/v21.7.3/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-05-14T13:30:50.266Z] CLI Version:   13.8.3
+[debug] [2024-05-14T13:30:50.266Z] Platform:      linux
+[debug] [2024-05-14T13:30:50.266Z] Node Version:  v21.7.3
+[debug] [2024-05-14T13:30:50.266Z] Time:          Tue May 14 2024 19:00:50 GMT+0530 (India Standard Time)
+[debug] [2024-05-14T13:30:50.267Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-14T13:30:50.371Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-14T13:30:50.372Z] > authorizing via signed-in user (karanpalan007@gmail.com)
+[debug] [2024-05-14T13:30:50.372Z] [iam] checking project nexusspherefindao for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-14T13:30:50.376Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nexusspherefindao:testIamPermissions [none]
+[debug] [2024-05-14T13:30:50.376Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nexusspherefindao:testIamPermissions x-goog-quota-user=projects/nexusspherefindao
+[debug] [2024-05-14T13:30:50.376Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nexusspherefindao:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-14T13:31:02.638Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nexusspherefindao:testIamPermissions 200
+[debug] [2024-05-14T13:31:02.638Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nexusspherefindao:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-14T13:31:02.640Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nexusspherefindao [none]
+[debug] [2024-05-14T13:31:16.410Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nexusspherefindao 200
+[debug] [2024-05-14T13:31:16.410Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nexusspherefindao {"projectId":"nexusspherefindao","projectNumber":"958779737970","displayName":"NexusSphereFinDAO","name":"projects/nexusspherefindao","resources":{"hostingSite":"nexusspherefindao"},"state":"ACTIVE","etag":"1_0431fb5b-bc7d-4fd7-bbfe-41516c16a845"}
+[info] 
+[info] === Deploying to 'nexusspherefindao'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-05-14T13:31:16.418Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/nexusspherefindao/versions [none]
+[debug] [2024-05-14T13:31:16.418Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/nexusspherefindao/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-05-14T13:31:35.591Z] *** [apiv2] error from fetch(https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/nexusspherefindao/versions, {"headers":{},"method":"POST","body":"{\"status\":\"CREATED\",\"labels\":{\"deployment-tool\":\"cli-firebase\"}}"}): FetchError: request to https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/nexusspherefindao/versions failed, reason: socket hang up
+[debug] [2024-05-14T13:31:40.595Z] Error: Timed out.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/utils.js:267:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
